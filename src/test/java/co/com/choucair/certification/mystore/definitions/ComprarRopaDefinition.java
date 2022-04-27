@@ -1,6 +1,7 @@
 package co.com.choucair.certification.mystore.definitions;
 
 import co.com.choucair.certification.mystore.steps.AbrirPaginaStep;
+import co.com.choucair.certification.mystore.steps.AccionesTareas;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -10,6 +11,9 @@ import net.thucydides.core.annotations.Steps;
 public class ComprarRopaDefinition {
     @Steps
     AbrirPaginaStep abrirPaginaStep;
+    @Steps
+    AccionesTareas accionesTareas;
+
 
     @Given("^que me encuentro en la pagina web My Store$")
     public void queMeEncuentroEnLaPaginaWebMyStore() {
@@ -19,7 +23,8 @@ public class ComprarRopaDefinition {
 
     @When("^inicio sesion con usuario \"([^\"]*)\" y clave \"([^\"]*)\"$")
     public void inicioSesionConUsuarioYClave(String usuario, String clave) {
-
+        accionesTareas.ClickLogin();
+        accionesTareas.IniciarSesion(usuario, clave);
     }
 
     @Then("compruebo nombre usuario de inicio sesion")
