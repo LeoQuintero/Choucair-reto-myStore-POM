@@ -17,11 +17,9 @@ compileJava.options.encoding = "UTF-8"
 compileTestJava.options.encoding = "UTF-8"
 
 dependencies {
-
     implementation group: 'net.serenity-bdd', name: 'serenity-core', version: '3.2.0'
     implementation 'junit:junit:4.13.1'
     implementation 'junit:junit:4.13.1'
-    //testCompile 'net.serenity-bdd:serenity-junit:2.1.6'
     testImplementation group: 'junit', name: 'junit', version: '4.13.2'
 
 
@@ -31,5 +29,17 @@ dependencies {
     implementation group: 'net.serenity-bdd', name: 'serenity-screenplay', version: '3.2.0'
     implementation group: 'net.serenity-bdd', name: 'serenity-screenplay-webdriver', version: '3.2.0'
 
+    implementation group: 'org.apache.poi', name: 'poi-ooxml', version: '4.1.2'
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.21'
+    testImplementation('junit:junit:4.12')
+    testImplementation('org.assertj:assertj-core:3.11.1')
+    testImplementation('org.slf4j:slf4j-simple:1.7.25')
+    testImplementation group: 'org.testng', name: 'testng', version: '6.14.3'
+    implementation group: 'org.json', name: 'json', version: '20200518'
+    implementation group: 'dk.kewill.thirdpartymavencentral', name: 'jt400-full', version: '7.10'
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '5.1.48'
+    implementation group: 'org.jdbi', name: 'jdbi', version: '2.78'
+    implementation group: 'org.postgresql', name: 'postgresql', version: '42.2.5'
+    implementation(group: 'com.github.javafaker', name: 'javafaker', version: '0.15')
 }
 gradle.startParameter.continueOnFailure = true
