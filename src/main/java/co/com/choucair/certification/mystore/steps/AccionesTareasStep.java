@@ -38,4 +38,9 @@ public class AccionesTareasStep {
     public void pagarCompra() {
         miOrdenCompra.pagarProducto();
     }
+
+    @Step
+    public void verificarOrdenCompraCompletada() {
+        miOrdenCompra.verificarMensajeCompra();
+    }
 }

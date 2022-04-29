@@ -47,7 +47,7 @@ public class ComprarRopaDefinition {
 
     @Then("valido que la compra este realizada")
     public void validoQueLaCompraEsteRealizada() {
-
+        accionesTareasStep.verificarOrdenCompraCompletada();
     }
 
 

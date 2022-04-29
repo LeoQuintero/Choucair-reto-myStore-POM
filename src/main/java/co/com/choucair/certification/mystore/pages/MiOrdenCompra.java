@@ -4,7 +4,8 @@ import net.serenitybdd.core.pages.PageObject;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import javax.xml.xpath.XPath;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.containsString;
 
 
 public class MiOrdenCompra extends PageObject {
@@ -27,6 +28,10 @@ public class MiOrdenCompra extends PageObject {
     @FindBy(xpath = "//*[@id='cart_navigation']/button/span")
     public WebElement botonConfirmMyOrder;
 
+    @FindBy(xpath = "//*[@id='center_column']/p[1]")
+    public WebElement labelOrderComplete;
+
+
     public void pagarProducto() {
         botonCheckoutSummay.click();
         botonCheckoutAddress.click();
@@ -34,5 +39,11 @@ public class MiOrdenCompra extends PageObject {
         botonCheckoutShipping.click();
         linkPagoPorCheque.click();
         botonConfirmMyOrder.click();
+    }
+
+    public void verificarMensajeCompra() {
+        String nombreLabel = "Your order on My Store is complete.";
+        String textoLabel = labelOrderComplete.getText();
+        assertThat(nombreLabel, containsString(textoLabel));
     }
 }
