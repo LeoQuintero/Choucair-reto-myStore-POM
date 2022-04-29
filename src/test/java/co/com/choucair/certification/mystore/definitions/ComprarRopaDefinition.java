@@ -42,7 +42,7 @@ public class ComprarRopaDefinition {
 
     @And("realizo el proceso de compra por cheque")
     public void realizoElProcesoDeCompraPorCheque() {
-
+        accionesTareasStep.pagarCompra();
     }
 
     @Then("valido que la compra este realizada")

@@ -3,7 +3,6 @@ package co.com.choucair.certification.mystore.pages;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsString;
@@ -31,13 +30,13 @@ public class MiTiendaPage extends PageObject {
     @FindBy(xpath = "//*[@id='layer_cart']/div[1]/div[2]/div[4]/a")
     public WebElement botonCheckout;
 
-    // boton add to car para el actions
-//    @FindBy(xpath = "//*[@id='center_column']/ul/li[1]/div/div[2]/div[2]/a[1]/span")
-//    public WebElement botonAddToCarTshirt;
+/*     boton add to car para el actions
+    @FindBy(xpath = "//*[@id='center_column']/ul/li[1]/div/div[2]/div[2]/a[1]/span")
+    public WebElement botonAddToCarTshirt;*/
 
-    // boton proceed to checkout para el actions
-//    @FindBy(xpath = "//*[@id='layer_cart']/div[1]/div[2]/div[4]/a/span")
-//    public WebElement botonProceedToCheckout;
+/*     boton proceed to checkout para el actions
+    @FindBy(xpath = "//*[@id='layer_cart']/div[1]/div[2]/div[4]/a/span")
+    public WebElement botonProceedToCheckout;*/
 
 
     public void validarSesionUsuario() {
