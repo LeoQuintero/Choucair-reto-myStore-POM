@@ -35,6 +35,8 @@ public class ComprarRopaDefinition {
 
     @When("agrego un producto al carrito de compra")
     public void agregoUnProductoAlCarritoDeCompra() {
+        accionesTareasStep.agregarProductoAlCarrito();
+
 
     }
 

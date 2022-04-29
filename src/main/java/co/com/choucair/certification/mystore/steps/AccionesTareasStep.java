@@ -25,4 +25,10 @@ public class AccionesTareasStep {
     public void validarSesionUsuario() {
         miTiendaPage.validarSesionUsuario();
     }
+
+    @Step
+    public void agregarProductoAlCarrito() {
+        miTiendaPage.ingresarASeccionWoman();
+        miTiendaPage.agregarAlCarrito();
+    }
 }
