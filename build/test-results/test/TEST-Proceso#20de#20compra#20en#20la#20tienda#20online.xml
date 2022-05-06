@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Proceso de compra en la tienda online" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-04-29T21:43:51" hostname="CHBOGCR7KJ93" time="34.916">
+<testsuite name="Proceso de compra en la tienda online" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-05-04T20:17:58" hostname="CHBOGCR7KJ93" time="50.888">
   <properties/>
-  <testcase name="Validar Compra exitosa 1 producto por cheque" classname="Proceso de compra en la tienda online" time="34.916"/>
+  <testcase name="Validar Compra exitosa 1 producto por cheque" classname="Proceso de compra en la tienda online" time="50.888"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 101.0.4951.41 (resolved driver for Chrome 101)
 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\equinteroc\.cache\selenium\chromedriver\win32\101.0.4951.41\chromedriver.exe
-Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 57627
+Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 54171
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-abr 29, 2022 4:43:56 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+may 04, 2022 3:18:03 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
-abr 29, 2022 4:43:56 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 04, 2022 3:18:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find an exact match for CDP version 101, so returning the closest version found: 97
-abr 29, 2022 4:43:56 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 04, 2022 3:18:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFORMACIÓN: Found CDP implementation for version 101 of 97
 ]]></system-err>
 </testsuite>
